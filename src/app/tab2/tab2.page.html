@@ -1,0 +1,64 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Estudios Realizados
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Estudios Realizados</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card-title class="ion-text-center">Curriculum Vitae</ion-card-title>
+  <img class=" circle-photo2" src="assets/img/2.png">
+  <ion-card>
+    <ion-list>
+      <div *ngFor="let item of data">
+        <ion-item>
+          <ion-card-content>
+            <h6 align="center">
+              <ion-icon name="happy-outline"></ion-icon>
+              Primaria: {{item.primaria}}
+            </h6>
+          </ion-card-content>
+        </ion-item>
+
+        <ion-item>
+          <ion-card-content>
+            <h6 align="center">
+              <ion-icon name="sad-outline"></ion-icon>
+              Secundaria: {{item.secundaria}}
+            </h6>
+          </ion-card-content>
+        </ion-item>
+
+        <ion-item>
+          <ion-card-content>
+            <h6 align="center">
+              <ion-icon name="skull-outline"></ion-icon>
+              Universidad: {{item.universidad}}
+            </h6>
+          </ion-card-content>
+        </ion-item>
+
+        <ion-item>
+          <ion-card-content>
+            <h6 align="center">
+              <ion-icon name="stats-chart-outline"></ion-icon>
+              Estudios adicionales: {{item.adicional}}
+            </h6>
+          </ion-card-content>
+        </ion-item>
+
+      </div>
+    </ion-list>
+  </ion-card>
+
+</ion-content>
+
+
+

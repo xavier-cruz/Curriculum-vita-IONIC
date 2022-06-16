@@ -1,0 +1,54 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Experiencia Laboral
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Experiencia Laboral</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card-title class="ion-text-center">Curriculum Vitae</ion-card-title>
+  <img class=" circle-photo3" src="assets/img/3.png">
+
+  <ion-card>
+    <ion-list>
+      <div *ngFor="let item of data">
+        <ion-item>
+          <ion-card-content>
+            <h6>
+              <ion-icon name="tv-outline"></ion-icon>
+              {{item.primero}}
+            </h6>
+          </ion-card-content>
+        </ion-item>
+
+        <ion-item>
+          <ion-card-content>
+            <h6>
+              <ion-icon name="tv-outline"></ion-icon>
+              {{item.segundo}}
+            </h6>
+          </ion-card-content>
+        </ion-item>
+
+        <ion-item>
+          <ion-card-content>
+            <h6>
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+              {{item.tercero}}
+            </h6>
+          </ion-card-content>
+        </ion-item>
+
+      </div>
+    </ion-list>
+  </ion-card>
+
+</ion-content>
+
